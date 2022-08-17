@@ -12,9 +12,9 @@ function App() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault()
-
-    setListTask([...listTask, { id: 1, nameTask: formTask }])
-
+    const id_aleatorio: number = Math.random()
+    setListTask([...listTask, { id: id_aleatorio, nameTask: formTask }])
+    console.log(id_aleatorio)
     setFormTask('')
   }
 
